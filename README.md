@@ -5,10 +5,17 @@ This project makes use of code from the original repository: https://github.com/
 
 Folder structure:
 
-First install ROS1 and then add volta packages.
-
-The folder "local_inn" is a ros1 package. It contains 2 types of scripts. one script (starting with "learned_nn_...py") load the trained model and the other scripts( starting with "inference...py) communicates with the trained model using ros services and plots the inferred pose and groudn truth pose. The ground truth test path is supplied in a csv file in inference scripts. 
+1. The folder "local_inn" is a ros1 package. It contains 2 types of scripts. one script (starting with "learned_nn_...py") load the trained model and the other scripts( starting with "inference...py) communicates with the trained model using ros services and plots the inferred pose and groudn truth pose. The ground truth test path is supplied in a csv file in inference scripts. You can also modify it to send ground truth poses and captured images in real time.
 
 
-The "training_scripts" folder has scripts for training the INN model. The script names containing the world "sparse" are used to training seprate model for each parameter in the 3D pose, where as the other script learns all the 3 DOF pose using a single model
+2. The "training_scripts" folder has scripts for training the INN model. The script names containing the world "sparse" are used to training seprate model for each parameter in the 3D pose, where as the other script learns all the 3 DOF pose using a single model
+
+
+SETUP:
+
+1. Install ROS1 and gazebo on ubuntu 20.04.
+2. Copy volta packages as mentioned in the github repo: https://github.com/airl-iisc/CPS280/tree/main/final_assignment
+3. Copy the folder "local_inn" package and build the code.
+4. Run the ros nodes to estimate the pose from trained model and plot the graphs
+
 
