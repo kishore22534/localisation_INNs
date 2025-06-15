@@ -1,0 +1,8 @@
+# Request
+float32[] lidar_data  # LIDAR scan data (array of floats)
+
+---
+# Response
+float32[3] pose  # x, y, theta
+
+

@@ -1,0 +1,8 @@
+# Request
+float32[] image_data  # camera scan data but using only pose as of now (array of floats)
+
+---
+# Response
+float32[3] pose  # x, y, theta
+
+

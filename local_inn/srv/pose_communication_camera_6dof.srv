@@ -1,0 +1,8 @@
+# Request
+float32[6] prev_pose  # camera scan data but using only pose as of now (array of floats)
+
+---
+# Response
+float32[6] pose  # x, y, z, roll, pitch, yaw
+
+
