@@ -21,3 +21,6 @@ SETUP:
 4. Run the ros nodes to estimate the pose from trained model and plot the graphs
 
 
+
+Training images data: https://drive.google.com/file/d/1_PPWGzl2Q0T1tcOdbzc0yhiI1xP4IBwl/view?usp=sharing
+
