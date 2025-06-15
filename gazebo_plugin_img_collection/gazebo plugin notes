@@ -1,0 +1,35 @@
+
+
+gzserver pluggin_test.world --verbose
+
+gzserver small_house.world --verbose
+
+gzserver small_house_6DOF.world --verbose
+
+export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:~/gazebo_plugin_tutorial/build
+
+gzclient -g libsystem_gui.so
+
+
+for resolution of frames change:
+
+nano ~/.gazebo/gui.ini
+
+
+[geometry]
+x=0      # X position (optional)
+y=0      # Y position (optional)
+width=1058
+height=917  # gives frame size of 768 by 768
+
+
+[geometry]
+x=0      # X position (optional)
+y=0      # Y position (optional)
+width=802
+height=661  # gives frame size of 512 by 512
+
+
+for loading small_house.world :
+
+export GAZEBO_MODEL_PATH=/home/siva/gazebo_plugin_tutorial/models:$GAZEBO_MODEL_PATH

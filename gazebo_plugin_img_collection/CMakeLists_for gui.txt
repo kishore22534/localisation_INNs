@@ -1,0 +1,33 @@
+cmake_minimum_required(VERSION 3.10)
+project(system_gui)
+
+# Find Gazebo (required for Gazebo plugins)
+find_package(gazebo REQUIRED)
+
+# Find Qt5 (required for GUI plugins)
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets OpenGL)
+
+# Include Gazebo and Qt headers
+include_directories(
+  ${GAZEBO_INCLUDE_DIRS}
+  ${Qt5Core_INCLUDE_DIRS}
+  ${Qt5Widgets_INCLUDE_DIRS}
+  ${Qt5OpenGL_INCLUDE_DIRS}
+)
+
+# Link against Qt and Gazebo libraries
+link_directories(
+  ${GAZEBO_LIBRARY_DIRS}
+  ${Qt5Core_LIBRARIES}
+  ${Qt5Widgets_LIBRARIES}
+  ${Qt5OpenGL_LIBRARIES}
+)
+
+# Build the plugin
+add_library(system_gui SHARED system_gui.cc)
+target_link_libraries(system_gui
+  ${GAZEBO_LIBRARIES}
+  ${Qt5Core_LIBRARIES}
+  ${Qt5Widgets_LIBRARIES}
+  ${Qt5OpenGL_LIBRARIES}
+)
