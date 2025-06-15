@@ -10,6 +10,8 @@ Folder structure:
 
 2. The "training_scripts" folder has scripts for training the INN model. The script names containing the world "sparse" are used to training seprate model for each parameter in the 3D pose, where as the other script learns all the 3 DOF pose using a single model
 
+3. gazebo_plugin_img_collection: this folder contains gezebo plugin for collecting training images. this method is much faster than collecting images from volta robot using ros topics
+
 
 SETUP:
 
