@@ -5,10 +5,10 @@ This project makes use of code from the original repository: https://github.com/
 
 Demo videos:
 
-### Robot Navigation with INN-Based Localization
+Robot Navigation with INN-Based Localization
 [![Watch the video](https://img.youtube.com/vi/JmE5oygbqMs/0.jpg)](https://www.youtube.com/watch?v=JmE5oygbqMs)
 
-### 3D Gaussian Splatting Scene Reconstruction
+3D Gaussian Splatting Scene Reconstruction
 [![Watch the video](https://img.youtube.com/vi/beDMbvP-PkI/0.jpg)](https://www.youtube.com/watch?v=beDMbvP-PkI)
 
 
