@@ -3,7 +3,7 @@ Problem statement: localisation of a robot in known environment with camera inpu
 
 This project makes use of code from the original repository: https://github.com/zzangupenn/Local_INN/ and the paper [Link](https://arxiv.org/abs/2209.11925).
 
-Demo video"
+Demo videos:
 
 ### Robot Navigation with INN-Based Localization
 [![Watch the video](https://img.youtube.com/vi/JmE5oygbqMs/0.jpg)](https://www.youtube.com/watch?v=JmE5oygbqMs)
