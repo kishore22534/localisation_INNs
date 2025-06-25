@@ -3,6 +3,17 @@ Problem statement: localisation of a robot in known environment with camera inpu
 
 This project makes use of code from the original repository: https://github.com/zzangupenn/Local_INN/ and the paper [Link](https://arxiv.org/abs/2209.11925).
 
+Demo video"
+
+### Robot Navigation with INN-Based Localization
+[![Watch the video](https://img.youtube.com/vi/JmE5oygbqMs/0.jpg)](https://www.youtube.com/watch?v=JmE5oygbqMs)
+
+### 3D Gaussian Splatting Scene Reconstruction
+[![Watch the video](https://img.youtube.com/vi/beDMbvP-PkI/0.jpg)](https://www.youtube.com/watch?v=beDMbvP-PkI)
+
+
+
+
 Folder structure:
 
 1. The folder "local_inn" is a ros1 package. It contains 2 types of scripts. one script (starting with "learned_nn_...py") load the trained model and the other scripts( starting with "inference...py) communicates with the trained model using ros services and plots the inferred pose and groudn truth pose. The ground truth test path is supplied in a csv file in inference scripts. You can also modify it to send ground truth poses and captured images in real time.
